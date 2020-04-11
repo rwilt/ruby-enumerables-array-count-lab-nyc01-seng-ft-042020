@@ -30,4 +30,5 @@ element.empty?
 total += 1
   end
 end
+total
 end
