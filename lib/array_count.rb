@@ -23,13 +23,9 @@ end
 
 def count_empty_strings(array)
   # Return the total number of EMPTY strings in the provided
-total = 0
-count = 0
-while count < array.length do
-if array[count].class == String &&  array[count] == " "
-total += 1
-  end
-     count += 1
+array.count do |element|
+  if element.class == String
+element.empty? || element == " "
 end
-total
+end
 end
