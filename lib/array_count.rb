@@ -25,9 +25,11 @@ def count_empty_strings(array)
   # Return the total number of EMPTY strings in the provided
 total = 0
 array.count do |element|
-# if element.class == String
+if element.class == String
 element.empty?
 total += 1
-  # end
+else
+  total += 0
+  end
 end
 end
