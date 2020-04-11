@@ -30,5 +30,5 @@ element.empty?
 total += 1
   end
 end
-puts total
+p total
 end
